@@ -1,0 +1,14 @@
+
+Question 9A: Automation
+
+Describe how you would automate the population of the database with all measurements for a specific day. In other words, the script you created in question 1 should be used to fetch the weather station data multiple times per hour, as the weather station data is updated every 20 minutes.
+
+Feel free to use a flowchat to show the steps of your approach.
+
+---
+You want something which runs every 20 minutes and then stops on its own.
+I know there are a lot of options to do this, e.g. within python itself or using tools in Azure, I just haven't used any of them before.
+
+A simple option, which doesn't stop on its own, is to use the following CRON command
+
+crontab -e /20 * * * * cd ~/projects/skilltest-buienradar && uv run main.py

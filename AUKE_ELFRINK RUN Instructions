@@ -1,0 +1,2 @@
+I Used UV for version management, which can be installed here https://docs.astral.sh/uv/
+to run the scripts, use "uv run file.py"
